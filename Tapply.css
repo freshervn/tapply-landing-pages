@@ -125,6 +125,12 @@ header .content {
   position: relative;
 }
 
+@media (min-width: 1800px) {
+  header .content {
+    margin-top: 12vw;
+  }
+}
+
 header .content img {
   width: 32%;
 }

@@ -91,6 +91,9 @@ nav{
 }
 header .content{
     margin-top:#{'min(2vw, 143px)'};
+    @media (min-width:1800px) {        
+        margin-top:12vw;
+    }
 //   width: min(40%, 400px);
     margin-bottom: 30px;
     position: relative;
