@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Tapply.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header>
@@ -284,6 +287,54 @@
     <!-- ppeding -->
     <section class="order">
     </section>
+    <section class="cards">
+        <div class="tapply-container">
+            <p class="titleSection">
+                Đặt mua thẻ cá nhân thông minh Tapply
+            </p>
+            <div class="swiper-container tapply-cards">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <figure>
+                                <div class="demo">
+                                    <img src="img/Mặt trước.png" alt="" class="font">
+                                    <img src="img/Mặt sau.png" alt="" class="back">
+                                </div>
+                                <figcaption>
+                                    <div class="font">
+                                        <h3 class="card-name">Thẻ Cá Nhân Thông Minh 
+                                            TAPPLY - Black
+                                        </h3>
+                                        <div class="tapply-text-center">
+                                            <p>
+                                                <span class="price">199.000đ</span>
+                                                <del class="old-price">320.000đ</del>
+                                                <span class="discount">-37%</span>
+                                            </p>                                        
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a href="#" class="btn-Tumbleweed">
+                                            Chi tiết
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>                  
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <img src="img/Frame 3600.png" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="img/Frame 3600.png" alt="">
+                </div>
+        </div>
+    </section>
     <section class="FAQ">
         <div class="tapply-container">
             <p class="titleSection">Những câu hỏi thường gặp</p>
@@ -323,7 +374,7 @@
                 </div> 
             </div>
         </div>
-    </section>
+    </section>   
     <footer>
         <div class="tapply-container">
             <div class="tapply-row">
@@ -398,5 +449,22 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container.tapply-cards', {
+        // Optional parameters
+        slidesPerView: 1,
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            768: {
+            slidesPerView: 3
+            }
+        },
+        });
+    </script>
 </body>
 </html>
