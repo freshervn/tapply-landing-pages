@@ -661,6 +661,11 @@ header .content{
     }
 }
 .cards{
+    .titleSection{
+        @media (max-width:768px) {
+            font-size: 22px;
+        }
+    }
     .card{
         figure{
             .demo{

@@ -919,6 +919,12 @@ header .content .tips img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .cards .titleSection {
+    font-size: 22px;
+  }
+}
+
 .cards .card figure .demo {
   padding-bottom: 54px;
   position: relative;
