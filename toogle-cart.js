@@ -1,6 +1,6 @@
 $(document).ready(
     function(){
-        $('.toogle-cart').click(
+        $('.toggle-cart').click(
             function(){
                 $('.OTC-cart-sidebar').toggleClass('active');
                 console.log('run');
