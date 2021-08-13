@@ -507,7 +507,7 @@ nav aside .links {
   }
 }
 
-nav aside .links .toogle-cart.btn-outline-black {
+nav aside .links .toggle-cart.btn-outline-black {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,12 +516,12 @@ nav aside .links .toogle-cart.btn-outline-black {
   position: relative;
 }
 
-nav aside .links .toogle-cart.btn-outline-black svg {
+nav aside .links .toggle-cart.btn-outline-black svg {
   margin: auto;
   fill: white;
 }
 
-nav aside .links .toogle-cart.btn-outline-black .amount {
+nav aside .links .toggle-cart.btn-outline-black .amount {
   position: absolute;
   top: 0.3em;
   right: 0.5em;
@@ -531,16 +531,16 @@ nav aside .links .toogle-cart.btn-outline-black .amount {
   font-size: 0.8em;
 }
 
-nav aside .links .toogle-cart.btn-outline-black:hover svg {
+nav aside .links .toggle-cart.btn-outline-black:hover svg {
   fill: black;
 }
 
-nav aside .links .toogle-cart.btn-outline-black:hover sub {
+nav aside .links .toggle-cart.btn-outline-black:hover sub {
   color: white;
 }
 
 @media (max-width: 768px) {
-  nav aside .links .toogle-cart.btn-outline-black {
+  nav aside .links .toggle-cart.btn-outline-black {
     margin-left: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -548,12 +548,12 @@ nav aside .links .toogle-cart.btn-outline-black:hover sub {
     margin-top: 1em;
     color: white;
   }
-  nav aside .links .toogle-cart.btn-outline-black svg {
+  nav aside .links .toggle-cart.btn-outline-black svg {
     margin: auto;
     fill: black;
     height: 24px;
   }
-  nav aside .links .toogle-cart.btn-outline-black sub {
+  nav aside .links .toggle-cart.btn-outline-black sub {
     line-height: 1em;
   }
 }
