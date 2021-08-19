@@ -603,6 +603,12 @@ header .content {
   position: relative;
 }
 
+@media (min-width: 768PX) {
+  header .content {
+    margin-bottom: 100px;
+  }
+}
+
 @media (min-width: 1800px) {
   header .content {
     margin-top: 12vw;
@@ -640,28 +646,32 @@ header .content .h2, header .content .h3, header .content .h1 {
 }
 
 header .content .h1 {
-  font-size: 34px;
+  font-size: 64px;
   margin-bottom: -1.5vw;
 }
 
 @media (max-width: 768px) {
   header .content .h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
 header .content .h2 {
   font-size: 24px;
+  font-family: monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  margin-top: 40px;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 @media (max-width: 768px) {
   header .content .h2 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20.5px;
     margin-top: 0px;
     margin-bottom: 0.5em;
@@ -705,11 +715,17 @@ header .content .container-btn {
 header .content .btn-Tumbleweed {
   position: relative;
   border: none;
+  background-color: white;
+  color: black;
+}
+
+header .content .btn-Tumbleweed:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
   header .content .btn-Tumbleweed {
-    color: black;
     margin-top: 4em;
     margin-bottom: 4em;
   }
@@ -775,21 +791,22 @@ header .content .tips img {
     color: white;
     list-style-type: none;
   }
-  header .content .tips li:first-child img {
-    display: none;
-  }
   header .content .tips div span {
     margin-left: auto;
     margin-right: auto;
   }
   header .content .tips p {
     font-size: 14px;
-    line-height: 2em;
+    line-height: 1.6em;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
   header .content .tips p img {
-    margin: 0;
+    margin: auto;
   }
   header .content .tips img {
     -webkit-filter: brightness(0) invert(1);
