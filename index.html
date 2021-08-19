@@ -12,7 +12,26 @@
 <body>
     <header>
         <div class="background">
-           <img src="img/home/bg-top.png" alt="">                            
+            <!-- Slider main container -->
+            <div class="swiper-container swiper-1-slide">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/home/product.png" alt="">                            
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/home/thum01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/home/bg-top.png" alt="">
+                </div>
+                ...
+                </div>
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>             -->
+            </div>
         </div>        
         <nav class="tapply-container">          
             <a class="tapply-logo" href="#">          
@@ -70,9 +89,6 @@
                 THẺ THÔNG MINH
             </h1>
             <img src="img/logo_header.png" alt="">
-            <div class="aspect">
-                <img src="img/home/Group 3837.png" alt="">                
-            </div>
             <h2 class="h2">
                 Chia sẻ thông tin liên hệ với người
                 <br> khác hiện đại hơn chỉ cần 
@@ -83,10 +99,10 @@
             <div class="container-btn">
                 <button class="btn-Tumbleweed">
                     Đặt mua thẻ
-                    <img class="sticker" src="img/home/bg-oval.png" alt="">
+                    <!-- <img class="sticker" src="img/home/bg-oval.png" alt=""> -->
                 </button>
             </div>
-            <ul class="tips">
+            <ul class="tips d-mobie">
                 <li>
                     <div>
                         <span>
@@ -817,7 +833,7 @@
     <!-- ============================= -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('.swiper-container.tapply-cards', {
             // Optional parameters
             direction: 'horizontal',
             slidesPerView: 2,
@@ -836,6 +852,22 @@
             breakpoints: {
                 768: {
                 slidesPerView: 3
+                }
+            },
+        });
+        const swiper2 = new Swiper('.swiper-container.swiper-1-slide', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 1,
+            loop: true,
+            observer: true, 
+            observeParents: true,            
+            autoplay: {
+                delay: 3000,
+            },            
+            breakpoints: {
+                768: {
+                slidesPerView: 1
                 }
             },
         });

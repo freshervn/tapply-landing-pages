@@ -48,10 +48,10 @@ body{
 header{
     position: relative;
     @media (min-width:768px) {        
-        height: 49.37vw;
+        height: 100vh;
     }
     .background{
-        z-index: -1;
+        z-index: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -59,16 +59,25 @@ header{
         height: 100%;
         img{
             width: 100%;
+            height: 100%;           
+        }  
+        &::after{
+            content: '';
+            z-index: 1;
+            position: absolute;
+            width: 100%;
             height: 100%;
-        }
-        @media (max-width:768px) {
-            height: 100%;
-            overflow: hidden;
-            img{
-                width: 300vw;
-                right: 0;
-            }
-        }
+            display: block;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.7);
+        }      
+    }
+    display: flex;
+    flex-direction: column;
+    .tapply-container{
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 nav{
@@ -76,7 +85,9 @@ nav{
     color: white;
     font-family: 'SF Pro Display',sans-serif;
     display: flex;
+    z-index: 99;
     .tapply-logo{
+        z-index: 1;
         margin-right: auto;
         img{
             height: 56px;
@@ -85,7 +96,8 @@ nav{
             }
         }
     }
-    aside{        
+    aside{             
+        z-index: 99;   
         .links{
             display: flex;                
             @media (max-width:768px) {                
@@ -179,7 +191,8 @@ nav{
     }
 }
 header .content{
-    margin-top:#{'min(2vw, 143px)'};
+    z-index: 3;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,13 +203,13 @@ header .content{
         height: calc(100vh - 40px);
     }
 //   width: min(40%, 400px);
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     position: relative;
     img{
         width: 32%;
-        @media (max-width:768px) {
-            margin-left: auto;
-            margin-right: auto;
+        margin-right: auto;
+        margin-left: auto;
+        @media (max-width:768px) {           
             width: 220px;
             margin-bottom: 1em;
         }
@@ -207,10 +220,7 @@ header .content{
         font-weight: 600;
         line-height: 44px;
         letter-spacing: 0em;
-        text-align: center;
-        @media (min-width:768px) {
-            text-align: left;
-        }
+        text-align: center;       
         color: white;
         margin: 0;
     }
@@ -228,10 +238,10 @@ header .content{
         line-height: 32px;
         margin-top: 40px;
         @media (max-width:768px) {
-            font-size: 11px;
+            font-size: 14px;
             line-height: 20.5px;
             margin-top: 0px;
-            margin-bottom: 0em;
+            margin-bottom: 0.5em;
         }
     }
     .h3{
@@ -240,14 +250,16 @@ header .content{
         font-weight: 600;
         margin-bottom: 20px;
         @media (max-width:768px) {
-            font-size: 12px;
+            font-size: 15px;
             line-height: 20.5px;            
             margin-top: 0px;
             text-align: center;
-            margin-bottom: calc(100vh - 450px);
+            margin-bottom: 5em;
         }
     }
     .container-btn{
+        margin-right:auto ;
+        margin-left: auto;
         @media (max-width:768px) {
             text-align: center;
         }
@@ -256,7 +268,8 @@ header .content{
         position: relative;
         border:none;
         @media (max-width:768px) {
-            color: black;            
+            color: black;    
+            background-color: white;        
         }
         .sticker{
             position: absolute;
@@ -271,21 +284,21 @@ header .content{
             }
         }
     }
-    .aspect{
-        padding: 20px 0 0px;                
-        display: none;
-        img{
-            width: 100%;
-            height: auto;
-        }
-        @media (min-width:768px) {            
-            display: block;            
-            position: absolute ;
-            width: 57%;
-            right: 0;
-            top: 0;
-        }
-    }
+    // .aspect{
+    //     padding: 20px 0 0px;                
+    //     display: none;
+    //     img{
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    //     @media (min-width:768px) {            
+    //         display: block;            
+    //         position: absolute ;
+    //         width: 57%;
+    //         right: 0;
+    //         top: 0;
+    //     }
+    // }
     .tips{
         margin-top: 3vw;
         background: transparent;
@@ -309,20 +322,7 @@ header .content{
             display: inline-block;
             margin-left: 6px;
             margin-right: 6px;
-        }
-        @media (min-width:768px) {
-            border: none;
-            position: absolute  ;
-            right: 28.5%;
-            top: 100%;
-            transform: translateX(50%);
-            font-size: 16px;
-            background: transparent ;
-            img{
-                height: 32px;
-                width: 32px;
-            }
-        }
+        }        
         @media (max-width:768px) {
             padding: 0;
             margin-top: 1em;
