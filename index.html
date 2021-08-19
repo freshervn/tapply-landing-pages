@@ -817,19 +817,27 @@
     <!-- ============================= -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container.tapply-cards', {
-        // Optional parameters
-        slidesPerView: 2,
-        loop: true,
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        breakpoints: {
-            768: {
-            slidesPerView: 3
-            }
-        },
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 2,
+            loop: true,
+            observer: true, 
+            observeParents: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,                
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, 
+            breakpoints: {
+                768: {
+                slidesPerView: 3
+                }
+            },
         });
     </script>
 </body>

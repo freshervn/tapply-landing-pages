@@ -974,10 +974,10 @@ header .content{
                     }
                 }                     
                 @media (min-width:768px) {
-                &:hover{
-                    // transform: rotateY(-90deg);                       
-                    // opacity: 0;
-                    .font{
+                    &:hover{
+                        // transform: rotateY(-90deg);                       
+                        // opacity: 0;
+                        .font{
                             opacity: 1;
                             transform: rotateY(90deg);                         
                             transition-delay: 0s;   
