@@ -1679,22 +1679,23 @@ header .content .tips img {
   }
 }
 
-.cards .card figure figcaption:hover .font {
-  opacity: 1;
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  z-index: -1;
-}
-
-.cards .card figure figcaption:hover .back {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  opacity: 1;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  z-index: 1;
+@media (min-width: 768px) {
+  .cards .card figure figcaption:hover .font {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    z-index: -1;
+  }
+  .cards .card figure figcaption:hover .back {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {

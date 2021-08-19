@@ -973,20 +973,22 @@ header .content{
                         height: auto;
                     }
                 }                     
+                @media (min-width:768px) {
                 &:hover{
                     // transform: rotateY(-90deg);                       
                     // opacity: 0;
                     .font{
-                        opacity: 1;
-                        transform: rotateY(90deg);                         
-                        transition-delay: 0s;   
-                        z-index: -1;                  
-                    }
-                    .back{
-                        transition-delay: 0.3s;
-                        opacity: 1;
-                        transform: rotateY(0deg);
-                        z-index: 1;
+                            opacity: 1;
+                            transform: rotateY(90deg);                         
+                            transition-delay: 0s;   
+                            z-index: -1;                                      
+                        }        
+                        .back{
+                            transition-delay: 0.3s;
+                            opacity: 1;
+                            transform: rotateY(0deg);
+                            z-index: 1;
+                        }
                     }
                 }         
             }
