@@ -1743,6 +1743,21 @@ header .content .tips img {
   height: fit-content;
 }
 
+@media (max-width: 768px) {
+  .cards .swiper-wrapper {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards .swiper-slide-active {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
+  }
+}
+
 @media (min-width: 768px) {
   .cards .swiper-container {
     padding-left: 30px;
@@ -1755,7 +1770,8 @@ header .content .tips img {
 
 @media (max-width: 768px) {
   .cards .swiper-container {
-    padding-bottom: 30px;
+    padding-bottom: 52px;
+    padding-top: 30px;
   }
   .cards .swiper-container .swiper-pagination-bullet-active {
     background: black;

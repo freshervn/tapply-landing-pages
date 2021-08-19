@@ -836,11 +836,12 @@
     <script>
         const swiper = new Swiper('.swiper-container.tapply-cards', {
             // Optional parameters
-            direction: 'horizontal',
-            slidesPerView: 2,
+            direction: 'horizontal',            
+            slidesPerView:'auto',
+            spaceBetween: 20,
+            centeredSlides:true,
+            grabCursor: true,
             loop: true,
-            observer: true, 
-            observeParents: true,
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
@@ -850,11 +851,11 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             }, 
-            breakpoints: {
-                768: {
-                slidesPerView: 3
-                }
-            },
+            // breakpoints: {                
+            //     768: {
+            //     slidesPerView: 3
+            //     }
+            // },
         });
         const swiper2 = new Swiper('.swiper-container.swiper-1-slide', {
             // Optional parameters
