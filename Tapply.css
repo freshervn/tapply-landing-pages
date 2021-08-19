@@ -646,7 +646,8 @@ header .content .h1 {
 
 @media (max-width: 768px) {
   header .content .h1 {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -660,10 +661,16 @@ header .content .h2 {
 
 @media (max-width: 768px) {
   header .content .h2 {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20.5px;
     margin-top: 0px;
     margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  header .content .h2 span {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    display: inline-block;
   }
 }
 
@@ -703,7 +710,8 @@ header .content .btn-Tumbleweed {
 @media (max-width: 768px) {
   header .content .btn-Tumbleweed {
     color: black;
-    background-color: white;
+    margin-top: 4em;
+    margin-bottom: 4em;
   }
 }
 

@@ -228,7 +228,8 @@ header .content{
         font-size: 34px;
         margin-bottom: -1.5vw;
         @media (max-width:768px) {
-            font-size: 18px;            
+            font-size: 20px;            
+            margin-bottom: 0.5em;
         }
     }
     .h2{
@@ -238,10 +239,16 @@ header .content{
         line-height: 32px;
         margin-top: 40px;
         @media (max-width:768px) {
-            font-size: 14px;
+            font-size: 20px;
             line-height: 20.5px;
             margin-top: 0px;
             margin-bottom: 0.5em;
+            font-weight: bold;
+            span{
+                font-weight: normal;
+                margin-bottom: 0.5em;
+                display: inline-block;
+            }
         }
     }
     .h3{
@@ -269,7 +276,9 @@ header .content{
         border:none;
         @media (max-width:768px) {
             color: black;    
-            background-color: white;        
+            margin-top: 4em;
+            margin-bottom: 4em;
+            // background-color: white;        
         }
         .sticker{
             position: absolute;
