@@ -1787,8 +1787,13 @@ header .content .tips img {
   .cards .swiper-slide-active {
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    -webkit-transform: scale(1.2) !important;
-            transform: scale(1.2) !important;
+  }
+  .cards .swiper-slide-active .demo {
+    -webkit-transform: scale(1.35) !important;
+            transform: scale(1.35) !important;
+  }
+  .cards .swiper-slide-active .hashtag {
+    display: none;
   }
 }
 

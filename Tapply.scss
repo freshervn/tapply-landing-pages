@@ -1044,7 +1044,12 @@ header .content{
     @media (max-width:768px) {
         .swiper-slide-active{
             transition: 0.2s;
-            transform: scale(1.2) !important;
+            .demo{                
+                transform: scale(1.35) !important;
+            }
+            .hashtag{
+                display: none;
+            }
         }
     }
     .swiper-container{
