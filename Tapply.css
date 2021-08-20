@@ -1472,9 +1472,30 @@ header .content .tips img {
   }
 }
 
+.cards .card figure {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.cards .card figure .hashtag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #D59F80;
+  color: white;
+  padding: 0.4em 1em;
+  font-size: 13px;
+  z-index: 1;
+  font-family: 'averta';
+}
+
 .cards .card figure .demo {
+  width: 90%;
+  margin: auto;
   padding-bottom: 54px;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .cards .card figure .demo::after {
