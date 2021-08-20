@@ -1785,8 +1785,8 @@ header .content .tips img {
 
 @media (max-width: 768px) {
   .cards .swiper-slide-active {
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transition: scale 0.2s;
+    transition: scale 0.2s;
   }
   .cards .swiper-slide-active .demo {
     -webkit-transform: scale(1.35) !important;

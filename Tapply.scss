@@ -1043,7 +1043,7 @@ header .content{
     }
     @media (max-width:768px) {
         .swiper-slide-active{
-            transition: 0.2s;
+            transition: scale 0.2s;
             .demo{                
                 transform: scale(1.35) !important;
             }
