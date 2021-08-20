@@ -583,9 +583,19 @@ nav aside .links .toggle-cart.btn-outline-black:hover sub {
   nav aside .links .btn-outline-black.toogle-menu-mobie {
     padding: 3px 12px;
   }
-  nav aside .links .btn-outline-black.toogle-menu-mobie svg {
-    height: 12px;
-    width: 12px;
+  nav aside .links .btn-outline-black.toogle-menu-mobie img {
+    fill: invert(1);
+  }
+}
+
+@media (max-width: 768px) {
+  nav aside .btn-outline-white.toogle-menu-mobie {
+    padding: 0 0;
+    border: none;
+  }
+  nav aside .btn-outline-white.toogle-menu-mobie img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
 }
 

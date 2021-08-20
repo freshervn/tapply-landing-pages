@@ -148,10 +148,26 @@ nav{
             .btn-outline-black.toogle-menu-mobie{
                 @media (max-width:768px) {
                     padding: 3px 12px;
-                    svg{
-                        height: 12px;
-                        width: 12px;
+                    // svg{
+                    //     height: 12px;
+                    //     width: 12px;
+                    // }
+                    img{
+                        fill: invert(1);
                     }
+                }
+            }
+        }
+        .btn-outline-white.toogle-menu-mobie{
+            @media (max-width:768px) {
+                padding: 0 0;
+                border:none;
+                // svg{
+                //     height: 12px;
+                //     width: 12px;
+                // }
+                img{
+                    filter: invert(1);
                 }
             }
         }
