@@ -605,7 +605,7 @@ header .content {
 
 @media (min-width: 768PX) {
   header .content {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -646,8 +646,9 @@ header .content .h2, header .content .h3, header .content .h1 {
 }
 
 header .content .h1 {
-  font-size: 64px;
-  margin-bottom: -1.5vw;
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-family: 'averta',monospace;
 }
 
 @media (max-width: 768px) {
@@ -660,13 +661,14 @@ header .content .h1 {
 }
 
 header .content .h2 {
-  font-size: 24px;
-  font-family: monospace;
+  font-size: 26px;
+  font-family: 'averta',sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 0em;
+  margin-bottom: .5em;
+  letter-spacing: 0.1em;
 }
 
 @media (max-width: 768px) {
@@ -716,7 +718,13 @@ header .content .btn-Tumbleweed {
   position: relative;
   border: none;
   background-color: white;
-  color: black;
+  color: #252525;
+  margin-top: 20px;
+  padding: 18px 30px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 0.13em;
 }
 
 header .content .btn-Tumbleweed:hover {
