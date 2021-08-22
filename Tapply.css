@@ -2377,11 +2377,16 @@ header .content .tips img {
 
 .cards2 .tapply-col-50 {
   margin-bottom: 15px;
+  width: 150px;
 }
 
 .cards2 .btn-outline-black {
   color: black;
   border-color: black;
+}
+
+.cards2 .tapply-row {
+  position: relative;
 }
 
 footer {
