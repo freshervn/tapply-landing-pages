@@ -35,7 +35,9 @@ $(document).ready(
                 $(window).mousedown(
                     function () {
                         $blockId = $('.' + $('.click-show').attr('data-block-id'));
-                        $blockId.toggleClass('mobie-on');
+                        if($('.links').hasClass('mobie-on')){
+                            $blockId.toggleClass('mobie-on');
+                        }
                     }
                 );
             }
