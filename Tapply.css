@@ -2375,9 +2375,15 @@ header .content .tips img {
   margin-bottom: 3em;
 }
 
+.cards2 .tapply-row {
+  display: block;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
 .cards2 .tapply-col-50 {
-  margin-bottom: 15px;
-  width: 145px;
+  display: inline-block;
+  width: auto;
 }
 
 .cards2 .btn-outline-black {

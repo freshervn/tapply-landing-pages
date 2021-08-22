@@ -1224,11 +1224,17 @@ header .content{
 }
 .cards2{
     margin-bottom: 3em;
+    .tapply-row{
+        display: block;
+        column-count: 2;
+    }
     .tapply-col-50{
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
         // min-width: 145px;
-        width: 145px;
+        // width: 145px;
         // max-width: 50%;
+        display: inline-block;
+        width: auto;
     }
     .btn-outline-black{
         color: black;
