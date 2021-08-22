@@ -347,6 +347,295 @@
   opacity: .5;
 }
 
+.tapply-card-details {
+  font-family: 'SVN-Gotham';
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.tapply-card-details .tapply-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .tapply-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.tapply-card-details .h1 {
+  font-family: 'SVN-Gotham';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0D0C22;
+  opacity: 0.9;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .h1 {
+    font-size: 22px;
+  }
+}
+
+.tapply-card-details .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .left {
+    width: 100%;
+  }
+}
+
+.tapply-card-details .left img {
+  width: 100%;
+}
+
+.tapply-card-details .left .small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  /* Handle on hover */
+}
+
+@media (min-width: 768px) {
+  .tapply-card-details .left .small {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+    height: 320px;
+    height: 100%;
+    overflow-y: scroll;
+    direction: rtl;
+  }
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .left .small {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tapply-card-details .left .small li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .left .small li {
+    margin-right: 15px;
+  }
+}
+
+.tapply-card-details .left .small img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .left .small img {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+.tapply-card-details .left .small::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.tapply-card-details .left .small::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+.tapply-card-details .left .small::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tapply-card-details .left .big {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 1em;
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .left .big {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .tapply-card-details .left .big figure {
+    width: 100%;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .tapply-card-details .right {
+    max-width: 40%;
+  }
+}
+
+.tapply-card-details .right table {
+  width: 100%;
+}
+
+.tapply-card-details .right th, .tapply-card-details .right td {
+  border-top: 1px solid #E8E7F6;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.tapply-card-details .right th {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.0168em;
+  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+          font-feature-settings: 'tnum' on, 'lnum' on;
+  /* Neutral - Color */
+  color: #0D0C22;
+  width: 8em;
+}
+
+.tapply-card-details .right .price {
+  Font-size: 24px;
+}
+
+.tapply-card-details .right .old-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.0168em;
+  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+          font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #0D0C22;
+  opacity: 0.8;
+}
+
+.tapply-card-details .right .discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FF0000;
+  opacity: 0.9;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 4px;
+}
+
+.tapply-card-details .right .cart-item-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #E8E7F6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tapply-card-details .right .cart-item-quantity input {
+  width: 3em;
+  border-color: transparent;
+  text-align: center;
+  size: 16px;
+  color: #0D0C22;
+}
+
+.tapply-card-details .right .cart-item-quantity button {
+  background: transparent;
+  border-color: transparent;
+}
+
+.tapply-card-details .right .cart-item-quantity button:hover {
+  cursor: pointer;
+}
+
+.tapply-card-details .right .cart-item-quantity button:hover svg path {
+  stroke: black;
+}
+
+.tapply-card-details .right .btn-buy {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 3em;
+  background: #0D0C22;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 132%;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tapply-card-details .right .btn-buy:hover {
+  background: #D59F80;
+  border-color: transparent;
+}
+
+.tapply-card-details .right .more-details {
+  margin-bottom: 0em;
+  margin-top: 0em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  letter-spacing: 0.0168em;
+  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+          font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #0D0C22;
+}
+
 @font-face {
   font-family: Futura;
   font-weight: 400;
@@ -381,6 +670,18 @@
   src: url("httpshttps://file.hstatic.net/200000281647/file/averta-bold_fa0601d5ca3642a7b961537a510a7394.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  font-weight: bold;
+  src: url("./SVN-Gotham/SVN-Gotham Black.otf");
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  font-weight: normal;
+  src: url("./SVN-Gotham/SVN-Gotham Book.otf");
 }
 
 body {

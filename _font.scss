@@ -32,8 +32,13 @@
 	font-weight: 700;
 	font-style:normal;
 }
-
-// @font-face {
-//     font-family: 'SVN-Gotham';
-//     src: url('./SVN-Gotham/SVN-Gotham Black.otf');        
-// }
+@font-face {
+    font-family: 'SVN-Gotham';
+	font-weight: bold;
+    src: url('./SVN-Gotham/SVN-Gotham Black.otf');        	
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+	font-weight: normal;
+    src: url('./SVN-Gotham/SVN-Gotham Book.otf');        	
+}
