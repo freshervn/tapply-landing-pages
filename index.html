@@ -33,12 +33,9 @@
                 <div class="swiper-button-next"></div>             -->
             </div>
         </div>        
-        <nav class="tapply-container">          
-            <a class="tapply-logo" href="#">          
-                <img src="img/logo_header.png" alt="">
-            </a>
+        <nav class="tapply-container">       
             <aside>
-                <button class="btn-outline-white d-mobie toogle-menu-mobie">
+                <button class="btn-outline-white toogle-menu-mobie click-show" data-block-id='links'>
                     <img src="img/List.png" alt="">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
                         <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
@@ -52,9 +49,13 @@
                             <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
                           </svg>
                     </button>
-                    <ul class="tapply-navbar-collapse">
+                    <hr class="d-mobie ">
+                    <a class="logo ClickToShow" href="#">          
+                        <img src="img/logo_header2.png" alt="">
+                    </a>
+                    <ul class="tapply-navbar-collapse ClickToShow">
                         <li class="nav-item">    
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link active">
                                 TRANG CHỦ
                             </a>
                         </li>
@@ -63,9 +64,14 @@
                                 HƯỚNG DẪN
                             </a>
                         </li>
+                        <li class="nav-item">    
+                            <a href="#" class="nav-link">
+                                sẢN PHẨM
+                            </a>
+                        </li>
                         <li class="nav-item">   
                             <a href="#" class="nav-link">
-                                ĐĂNG KÝ MỞ THẺ
+                                TIN TỨC
                             </a>
                         </li>
                         <li class="nav-item">    
@@ -74,16 +80,37 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="btn-outline-black">
-                        Đăng nhập 
-                    </button>
-                    <button class="toggle-cart btn-outline-black">
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.96 22"> <title>Cart</title> <g data-name="Layer 2"> <g data-name="Layer 1"> <path d="M22.7,8l-3,13H4.3l-3-13H22.7M24,7H0L3.51,22H20.45L24,7Z"></path> <rect x="11.48" width="1" height="7"></rect> </g> </g></svg>
-                        <sub class="amount">4</sub>
-                    </button>  
-                </div>       
-                      
+                    <div class="tapply-flex ClickToShow">
+                        <a href="#">
+                            <button class="btn-outline-black">
+                                Đăng ký mở thẻ
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="btn-outline-black sign-in">
+                                Đăng nhập   
+                            </button>
+                        </a>
+                    </div>
+                </div>                             
             </aside>
+            <div class="logo-container">
+                <a class="tapply-logo" href="#">          
+                    <img src="img/logo_header.png" alt="">
+                </a>
+            </div>   
+            <div class="cart-search">
+                <a href="" class="search ">
+                    <img src="img/icon/MagnifyingGlass.svg" alt="">
+                </a>
+                <a href="" class="cart">
+                    <!-- <button class="toggle-cart btn-outline-black">
+                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.96 22"> <title>Cart</title> <g data-name="Layer 2"> <g data-name="Layer 1"> <path d="M22.7,8l-3,13H4.3l-3-13H22.7M24,7H0L3.51,22H20.45L24,7Z"></path> <rect x="11.48" width="1" height="7"></rect> </g> </g></svg>
+                    </button>   -->
+                    <img src="img/icon/ShoppingCartSimple.svg" alt="">
+                    <sub class="amount">4</sub>
+                </a>
+            </div>
         </nav>
         <div class="content tapply-container">
             <h1 class="h1">

@@ -34,11 +34,21 @@
 }
 @font-face {
     font-family: 'SVN-Gotham';
-	font-weight: bold;
+	font-weight: 900;
     src: url('./SVN-Gotham/SVN-Gotham Black.otf');        	
 }
 @font-face {
     font-family: 'SVN-Gotham';
-	font-weight: normal;
+	font-weight: 400;
     src: url('./SVN-Gotham/SVN-Gotham Book.otf');        	
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+	font-weight: 700;
+    src: url('./SVN-Gotham/SVN-Gotham Bold.ttf');        	
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+	font-weight: 500;
+    src: url('./SVN-Gotham/SVN-Gotham Bold.ttf');        	
 }
