@@ -955,6 +955,9 @@ header .content{
             text-align: center;
             position: relative;
             padding-top: 50px;
+            @media (max-width:768px) {                
+                padding-top: 0px;
+            }
             .hashtag{
                 position: absolute;
                 top: 0;
@@ -965,6 +968,9 @@ header .content{
                 font-size: 13px;
                 z-index: 1;
                 font-family: 'averta';
+                @media (max-width:768px) {
+                    display: none;
+                }
             }
             .demo{
                 width: 90%;
@@ -1069,8 +1075,8 @@ header .content{
                 .discount{
                     color:red;
                     font-size: 12px;
-                    @media (max-width:768px) {
-                        display: none;
+                    @media (max-width:320px) {
+                        font-size: 10px;
                     }
                 }
                 .tapply-text-center{
@@ -1120,15 +1126,15 @@ header .content{
                     transition: 0.3s ease-in-out;
                     z-index: -1;
                     opacity: 1;
-                    @media (max-width:768px) {
-                        position: relative;
-                        opacity: 1;
-                        transform: rotateY(0);
-                        width: auto;
-                        height: auto;
-                    }
+                    // @media (max-width:768px) {
+                    //     position: relative;
+                    //     opacity: 1;
+                    //     transform: rotateY(0);
+                    //     width: auto;
+                    //     height: auto;
+                    // }
                 }                     
-                @media (min-width:768px) {
+                // @media (min-width:768px) {
                     &:hover{
                         // transform: rotateY(-90deg);                       
                         // opacity: 0;
@@ -1145,7 +1151,7 @@ header .content{
                             z-index: 1;
                         }
                     }
-                }         
+                // }         
             }
             @media (max-width:768px) {
                 margin: 0;
@@ -1216,6 +1222,11 @@ header .content{
         }
     }
     
+}
+.cards2{
+    .tapply-col-50{
+        margin-bottom: 15px;
+    }
 }
 footer{
     background-image:url('img/bg_footer.png');
@@ -1468,6 +1479,9 @@ footer{
     @media (min-width:768px) {        
         max-width: 50%;
     }
+}
+.tapply-col-50{
+    width: 50%;
 }
 .titleSection{
     font-weight: bold;

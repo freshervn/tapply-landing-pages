@@ -2025,6 +2025,12 @@ header .content .tips img {
   padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .cards .card figure {
+    padding-top: 0px;
+  }
+}
+
 .cards .card figure .hashtag {
   position: absolute;
   top: 0;
@@ -2035,6 +2041,12 @@ header .content .tips img {
   font-size: 13px;
   z-index: 1;
   font-family: 'averta';
+}
+
+@media (max-width: 768px) {
+  .cards .card figure .hashtag {
+    display: none;
+  }
 }
 
 .cards .card figure .demo {
@@ -2176,9 +2188,9 @@ header .content .tips img {
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .cards .card figure figcaption .discount {
-    display: none;
+    font-size: 10px;
   }
 }
 
@@ -2256,34 +2268,22 @@ header .content .tips img {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .cards .card figure figcaption .back {
-    position: relative;
-    opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-    width: auto;
-    height: auto;
-  }
+.cards .card figure figcaption:hover .font {
+  opacity: 1;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  z-index: -1;
 }
 
-@media (min-width: 768px) {
-  .cards .card figure figcaption:hover .font {
-    opacity: 1;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-    z-index: -1;
-  }
-  .cards .card figure figcaption:hover .back {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    z-index: 1;
-  }
+.cards .card figure figcaption:hover .back {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -2369,6 +2369,10 @@ header .content .tips img {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+.cards2 .tapply-col-50 {
+  margin-bottom: 15px;
 }
 
 footer {
@@ -2692,6 +2696,10 @@ footer .coppyright p {
   .tapply-col-md-50 {
     max-width: 50%;
   }
+}
+
+.tapply-col-50 {
+  width: 50%;
 }
 
 .titleSection {
