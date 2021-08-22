@@ -424,8 +424,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-left: 20px;
+    padding-right: 5px;
     height: 320px;
-    height: 100%;
     overflow-y: scroll;
     direction: rtl;
   }
@@ -442,6 +442,11 @@
   }
 }
 
+.tapply-card-details .left .small li {
+  -webkit-box-shadow: 0.3em 0.3em .3em 0 gray;
+          box-shadow: 0.3em 0.3em .3em 0 gray;
+}
+
 @media (min-width: 768px) {
   .tapply-card-details .left .small li {
     margin-bottom: 15px;
@@ -450,7 +455,7 @@
 
 @media (max-width: 768px) {
   .tapply-card-details .left .small li {
-    margin-right: 15px;
+    margin-right: 25px;
   }
 }
 
@@ -463,14 +468,14 @@
 
 @media (max-width: 768px) {
   .tapply-card-details .left .small img {
-    width: 80px;
+    width: 40px;
     height: 40px;
   }
 }
 
 .tapply-card-details .left .small::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
+  height: 3px;
 }
 
 .tapply-card-details .left .small::-webkit-scrollbar-thumb {
@@ -535,8 +540,26 @@
   width: 8em;
 }
 
+@media (max-width: 768px) {
+  .tapply-card-details .right th {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .right td {
+    font-size: 14px;
+  }
+}
+
 .tapply-card-details .right .price {
-  Font-size: 24px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .right .price {
+    font-size: 16px;
+  }
 }
 
 .tapply-card-details .right .old-price {
@@ -550,6 +573,12 @@
           font-feature-settings: 'tnum' on, 'lnum' on;
   color: #0D0C22;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .right .old-price {
+    font-size: 14px;
+  }
 }
 
 .tapply-card-details .right .discount {
@@ -568,6 +597,12 @@
   -ms-flex-positive: 0;
       flex-grow: 0;
   margin: 0px 4px;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .right .discount {
+    font-size: 14px;
+  }
 }
 
 .tapply-card-details .right .cart-item-quantity {
@@ -601,6 +636,14 @@
   stroke: black;
 }
 
+.tapply-card-details .right .buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+}
+
 .tapply-card-details .right .btn-buy {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -622,6 +665,13 @@
   border-color: transparent;
 }
 
+@media (max-width: 768px) {
+  .tapply-card-details .right .btn-buy {
+    font-size: 16px;
+    margin: 1em auto;
+  }
+}
+
 .tapply-card-details .right .more-details {
   margin-bottom: 0em;
   margin-top: 0em;
@@ -634,6 +684,12 @@
   -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
           font-feature-settings: 'tnum' on, 'lnum' on;
   color: #0D0C22;
+}
+
+@media (max-width: 768px) {
+  .tapply-card-details .right .more-details {
+    font-size: 14px;
+  }
 }
 
 @font-face {
