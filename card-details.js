@@ -51,7 +51,8 @@ function wc_hex_is_light([r,g,b]) {
     const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
     return brightness > 155;
 }
-$('input[name="tapply-name"]').keydown(function(){
+$('input[name="tapply-name"]').keyup(function(){
     $('.small .small-item.main-card')[0].click();
-    $('.main-card span').text($(this).val());
+    let text=$(this).val();
+    $('.main-card span').text(text);
 })
