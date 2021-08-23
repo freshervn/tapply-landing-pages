@@ -2009,7 +2009,7 @@ header .content .tips img:last-of-type {
 }
 
 .FAQ .titleSection {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-top: 0;
   font-size: 34px;
 }
@@ -2035,20 +2035,20 @@ header .content .tips img:last-of-type {
   /* 28/Subtitle */
   font-family: var(--font-main);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
   line-height: 132%;
   color: #0D0C22;
   opacity: 0.9;
   margin-bottom: 1em;
   cursor: pointer;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
   .FAQ .question {
     font-size: 16px;
     margin-bottom: 0.3em;
-    font-weight: 500;
     letter-spacing: 5%;
   }
 }
