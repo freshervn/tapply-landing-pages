@@ -783,7 +783,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
 }
 
 .tapply-bg-second {
@@ -847,7 +847,7 @@ header .swiper-container {
 nav {
   padding-top: 12px;
   color: white;
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1470,7 +1470,16 @@ header .content .tips img:last-of-type {
   background-image: url("img/home/bg-section02.png");
   background-size: 100%;
   background-position-y: 100%;
+  padding-bottom: 4em;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .tapply-tutorial {
+    background-size: 1440px;
+    background-position-x: 100%;
+    padding-bottom: 2em;
+  }
 }
 
 .tapply-tutorial .tapply-row {
@@ -1481,14 +1490,16 @@ header .content .tips img:last-of-type {
 
 .tapply-tutorial .h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
   color: #0D0C22;
-  margin-top: 3em;
+  margin-top: 1em;
   text-transform: uppercase;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 768px) {
   .tapply-tutorial .h1 {
+    margin-top: 3em;
     font-size: 34px;
   }
 }
@@ -1616,12 +1627,13 @@ header .content .tips img:last-of-type {
 }
 
 .tapply-can .h1 {
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-weight: 700;
   font-size: 48px;
   color: #0D0C22;
   margin-top: 0;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -1632,19 +1644,18 @@ header .content .tips img:last-of-type {
 }
 
 .tapply-can .decription {
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 138%;
   /* or 28px */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   letter-spacing: 0.0075em;
   color: #0D0C22;
   opacity: 0.9;
   margin-top: 0;
+  margin-bottom: 3em;
 }
 
 @media (max-width: 768px) {
@@ -1665,6 +1676,8 @@ header .content .tips img:last-of-type {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 @media (max-width: 768px) {
@@ -1686,7 +1699,6 @@ header .content .tips img:last-of-type {
 }
 
 .tapply-can .features div {
-  margin-top: auto;
   margin-bottom: auto;
 }
 
@@ -1694,8 +1706,8 @@ header .content .tips img:last-of-type {
   margin: auto;
   margin-right: 24px;
   border-radius: 8px;
-  width: 68px;
-  height: 68px;
+  width: 56px;
+  height: 56px;
   background: #d59f80;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1712,6 +1724,8 @@ header .content .tips img:last-of-type {
 
 .tapply-can .features figure img {
   margin: auto;
+  width: 38px;
+  height: 38px;
 }
 
 @media (max-width: 768px) {
@@ -1727,13 +1741,14 @@ header .content .tips img:last-of-type {
 
 .tapply-can .features .title {
   /* 24/Headline */
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 132%;
   /* Neutral - Color */
   color: #0D0C22;
+  opacity: 90%;
   margin-bottom: 8px;
   margin-top: 0;
 }
@@ -1747,7 +1762,7 @@ header .content .tips img:last-of-type {
 
 .tapply-can .features .decription {
   /* 16/Body1 */
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1770,6 +1785,18 @@ header .content .tips img:last-of-type {
 @media (max-width: 768px) {
   .tapply-can .features .decription {
     font-size: 12px;
+  }
+}
+
+.tapply-can .tapply-col-md-left .tapply-text-center {
+  font-size: 24px;
+  color: #0D0C22;
+  opacity: 90%;
+}
+
+@media (max-width: 768px) {
+  .tapply-can .tapply-col-md-left .tapply-text-center {
+    font-size: 14px;
   }
 }
 
@@ -1802,7 +1829,7 @@ header .content .tips img:last-of-type {
 }
 
 .you-can .h1 {
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -1984,13 +2011,14 @@ header .content .tips img:last-of-type {
 .FAQ .titleSection {
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 34px;
 }
 
 @media (max-width: 768px) {
   .FAQ .titleSection {
-    size: 24px;
-    max-width: 10em;
+    font-size: 24px;
     margin: auto;
+    margin-bottom: 1em;
   }
 }
 
@@ -1998,28 +2026,40 @@ header .content .tips img:last-of-type {
   padding-top: 1rem;
 }
 
+.FAQ details {
+  border-bottom: 1px solid #D59F80;
+  margin-bottom: 1.5em;
+}
+
 .FAQ .question {
   /* 28/Subtitle */
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 132%;
   color: #0D0C22;
   opacity: 0.9;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .FAQ .question {
     font-size: 16px;
     margin-bottom: 0.3em;
+    font-weight: 500;
+    letter-spacing: 5%;
   }
+}
+
+.FAQ .question::marker {
+  content: '';
 }
 
 .FAQ .answer {
   margin-top: 0;
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2066,6 +2106,7 @@ header .content .tips img:last-of-type {
   text-align: center;
   position: relative;
   padding-top: 50px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -2126,20 +2167,21 @@ header .content .tips img:last-of-type {
   }
 }
 
-.card figure .demo:hover img.font {
-  opacity: 1;
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.card figure .demo:hover img.back {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  opacity: 1;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+@media (min-width: 768px) {
+  .card figure .demo:hover img.font {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .card figure .demo:hover img.back {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
 }
 
 .card figure img {
@@ -2171,8 +2213,14 @@ header .content .tips img:last-of-type {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .card figure figcaption {
+    border-bottom: 1px solid rgba(13, 12, 34, 0.5);
+  }
+}
+
 .card figure figcaption .card-name {
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2196,7 +2244,7 @@ header .content .tips img:last-of-type {
 }
 
 .card figure figcaption .price {
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2311,22 +2359,23 @@ header .content .tips img:last-of-type {
   opacity: 1;
 }
 
-.card figure figcaption:hover .font {
-  opacity: 1;
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  z-index: -1;
-}
-
-.card figure figcaption:hover .back {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  opacity: 1;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  z-index: 1;
+@media (min-width: 768px) {
+  .card figure figcaption:hover .font {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    z-index: -1;
+  }
+  .card figure figcaption:hover .back {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2336,6 +2385,10 @@ header .content .tips img:last-of-type {
   .card figure figcaption .card-name {
     font-size: 11px;
   }
+}
+
+.cards {
+  padding-bottom: 4em;
 }
 
 @media (max-width: 768px) {
@@ -2394,10 +2447,6 @@ header .content .tips img:last-of-type {
 }
 
 @media (min-width: 768px) {
-  .cards .swiper-container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   .cards .swiper-container:hover .swiper-button-prev, .cards .swiper-container:hover .swiper-button-next {
     opacity: 1;
   }
@@ -2431,6 +2480,8 @@ header .content .tips img:last-of-type {
 }
 
 .cards2 .tapply-col-50 {
+  margin-bottom: 2em;
+  width: 50%;
   display: inline-block;
   width: auto;
 }
@@ -2449,7 +2500,7 @@ footer {
   background-size: 100%;
   padding-top: 3rem;
   /* 16/Subtitle1 */
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2663,7 +2714,7 @@ footer .coppyright p {
 .btn-Tumbleweed {
   background: #D59F80;
   border-radius: 8px;
-  font-family: 'SF Pro Display',sans-serif;
+  font-family: var(--font-main);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2809,31 +2860,31 @@ footer .coppyright p {
 
 @-webkit-keyframes touchcard {
   0% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateX(46px) translateY(35px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(35px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
   50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
 }
 
 @keyframes touchcard {
   0% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateX(46px) translateY(35px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(35px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
   50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
+            transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
   }
 }
 

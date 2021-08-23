@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'SF Pro Display',sans-serif;
+    font-family: var(--font-main);
 }
 .tapply-bg-second{
     background:#fffbf0;
@@ -57,7 +57,7 @@ header{
 nav{
     padding-top: 12px;
     color: white;
-    font-family: 'SF Pro Display',sans-serif;
+    font-family: var(--font-main);
     display: flex;
     z-index: 99;
     .tapply-logo{
@@ -536,6 +536,12 @@ header .content{
     background-image: url('img/home/bg-section02.png');
     background-size: 100%;
     background-position-y: 100%;
+    padding-bottom: 4em;
+    @media (max-width:768px) {
+        background-size: 1440px;
+        background-position-x: 100%;
+        padding-bottom: 2em;
+    }
     background-repeat: no-repeat;
     .tapply-row{
         justify-content: center;
@@ -543,11 +549,13 @@ header .content{
     .h1{
         // font-style: Bold;
         text-align: center;
-        font-size: 26px;
+        font-size: 20px;
         color: #0D0C22;
-        margin-top: 3em;
+        margin-top: 1em;
         text-transform: uppercase;
+        margin-bottom: 2em;
         @media (min-width:768px) {
+            margin-top: 3em;
             font-size: 34px;       
         }
     }
@@ -565,6 +573,7 @@ header .content{
                 animation: bright 2s ease-in-out alternate-reverse infinite;
             }
             svg > rect{
+                // transform: translateX(5px) translateY(15px) rotateX(0) rotateY(0) rotateZ(15deg);
                 animation: touchcard 2s  ease-in-out alternate-reverse infinite;                     
             }
         }
@@ -635,29 +644,31 @@ header .content{
         padding-bottom: 44px;
     }
     .h1{
-        font-family: 'SF Pro Display',sans-serif;
+        font-family: var(--font-main);
         font-weight: 700;
         font-size: 48px;
         color: #0D0C22;
         margin-top: 0;
         margin-bottom: 8px;
+        text-transform: uppercase;
         @media (max-width:768px) {
             font-size: 20px;
             padding-bottom: 0;
         }
     }
     .decription{
-        font-family: 'SF Pro Display',sans-serif;
+        font-family: var(--font-main);
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
         line-height: 138%;
         /* or 28px */
-        display: flex;
+        display: inline-block;
         letter-spacing: 0.0075em;
         color: #0D0C22;
         opacity: 0.9;
         margin-top: 0;
+        margin-bottom: 3em;
         @media (max-width:768px) {
             font-size: 14px;
             padding-bottom: 0;
@@ -666,7 +677,9 @@ header .content{
     .tapply-col-md-right{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;        
+        justify-content: space-between; 
+        padding-top: 3em;       
+        padding-bottom: 3em;
         @media (max-width:768px) {
             padding-top: 15px;
         }
@@ -677,15 +690,15 @@ header .content{
             margin-bottom: 12px;
         }
         div{
-            margin-top: auto;
+            // margin-top: auto;
             margin-bottom: auto;
         }
         figure{
             margin: auto;
             margin-right: 24px;
             border-radius: 8px;
-            width: 68px;
-            height: 68px;
+            width: 56px;
+            height: 56px;
             background:#d59f80;
             display: flex;     
             @media (max-width:768px) {
@@ -695,6 +708,8 @@ header .content{
             }       
             img{
                 margin: auto;                                  
+                width: 38px;                
+                height: 38px;
                 @media (max-width:768px) {
                     max-width: 32px;                
                     max-height: 32px;
@@ -706,14 +721,15 @@ header .content{
         }
         .title{
             /* 24/Headline */
-            font-family: 'SF Pro Display',sans-serif;
+            font-family: var(--font-main);
             font-style: normal;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 132%;
             /* Neutral - Color */
             color: #0D0C22;
-            margin-bottom: 8px;
+            opacity: 90%;
+            margin-bottom: 8px;            
             margin-top: 0;
             @media (max-width:768px) {
                 font-size: 14px;
@@ -722,7 +738,7 @@ header .content{
         }
         .decription{          
             /* 16/Body1 */
-            font-family: 'SF Pro Display',sans-serif;
+            font-family: var(--font-main);
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -740,6 +756,16 @@ header .content{
             }
         }
         
+    }
+    .tapply-col-md-left{
+        .tapply-text-center{            
+            font-size: 24px;  
+            color: #0D0C22;            
+            opacity:90%;
+            @media (max-width:768px) {
+                font-size: 14px;
+            }
+        }        
     }
 }
 .you-can{
@@ -761,7 +787,7 @@ header .content{
         }
     }
     .h1{
-        font-family: 'SF Pro Display',sans-serif;
+        font-family: var(--font-main);
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
@@ -884,33 +910,45 @@ header .content{
     .titleSection{
         margin-bottom: 0;
         margin-top: 0;
+        font-size: 34px;
         @media (max-width:768px) {
-            size: 24px;
-            max-width: 10em;
+            font-size: 24px;
+            // max-width: 10em;
             margin: auto;
+            margin-bottom: 1em;
         }   
     }
     .QA{
         padding-top: 1rem;
     }
+    details{
+        border-bottom: 1px solid #D59F80;
+        margin-bottom: 1.5em;
+    }
     .question{        
         /* 28/Subtitle */
-        font-family: 'SF Pro Display',sans-serif;
+        font-family: var(--font-main);
         font-style: normal;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 24px;
         line-height: 132%;
         color: #0D0C22;
         opacity: 0.9;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
+        cursor: pointer;
         @media (max-width:768px) {
             font-size: 16px;
             margin-bottom: 0.3em;
+            font-weight: 500;
+            letter-spacing: 5%;
         }   
+        &::marker{
+            content: '';
+        }
     }
     .answer{
         margin-top: 0;
-        font-family: 'SF Pro Display',sans-serif;
+        font-family: var(--font-main);
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
@@ -950,6 +988,7 @@ header .content{
         text-align: center;
         position: relative;
         padding-top: 50px;
+        margin: 0;
         @media (max-width:768px) {                
             padding-top: 0px;
         }
@@ -990,20 +1029,22 @@ header .content{
             @media (max-width:768px) {
                 padding-bottom: 24px;
             }
-            &:hover{
-                // transform: rotateY(-90deg);                       
-                // opacity: 0;
-                img.font{
-                    opacity: 1;
-                    transform: rotateY(90deg);                         
-                    transition-delay: 0s;                     
-                }
-                img.back{
-                    transition-delay: 0.3s;
-                    opacity: 1;
-                    transform: rotateY(0deg);
-                }
-            }   
+            @media (min-width:768px) {
+                &:hover{
+                    // transform: rotateY(-90deg);                       
+                    // opacity: 0;
+                    img.font{
+                        opacity: 1;
+                        transform: rotateY(90deg);                         
+                        transition-delay: 0s;                     
+                    }
+                    img.back{
+                        transition-delay: 0.3s;
+                        opacity: 1;
+                        transform: rotateY(0deg);
+                    }
+                }   
+            }            
             margin-bottom: 1em;                 
         }
         img{
@@ -1025,9 +1066,12 @@ header .content{
             }                                
         }
         figcaption{         
-            position: relative;       
+            position: relative; 
+            @media (min-width:768px) {                
+                border-bottom: 1px solid rgba(#0D0C22,0.5) ;      
+            }
             .card-name{
-                font-family: 'SF Pro Display',sans-serif;
+                font-family: var(--font-main);
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;
@@ -1046,7 +1090,7 @@ header .content{
                 }
             }
             .price{         
-                font-family:'SF Pro Display',sans-serif;
+                font-family:var(--font-main);
                 font-style: normal;
                 font-weight: bold;
                 font-size: 16px;                
@@ -1129,7 +1173,7 @@ header .content{
                 //     height: auto;
                 // }
             }                     
-            // @media (min-width:768px) {
+            @media (min-width:768px) {
                 &:hover{
                     // transform: rotateY(-90deg);                       
                     // opacity: 0;
@@ -1146,7 +1190,7 @@ header .content{
                         z-index: 1;
                     }
                 }
-            // }         
+            }         
         }
         @media (max-width:768px) {
             margin: 0;
@@ -1159,6 +1203,7 @@ header .content{
     }
 }
 .cards{
+    padding-bottom: 4em;
     .titleSection{
         @media (max-width:768px) {
             font-size: 22px;
@@ -1200,8 +1245,8 @@ header .content{
     }
     .swiper-container{
         @media (min-width:768px) {
-            padding-left: 30px;
-            padding-right: 30px;
+            // padding-left: 30px;
+            // padding-right: 30px;
             &:hover{
                 .swiper-button-prev, .swiper-button-next{         
                     opacity: 1;          
@@ -1230,9 +1275,9 @@ header .content{
         column-count: 2;
     }
     .tapply-col-50{
-        // margin-bottom: 15px;
+        margin-bottom: 2em;        
         // min-width: 145px;
-        // width: 145px;
+        width: 50%;
         // max-width: 50%;
         display: inline-block;
         width: auto;
@@ -1254,7 +1299,7 @@ footer{
     }
     padding-top: 3rem;
     /* 16/Subtitle1 */
-    font-family: 'SF Pro Display',sans-serif;
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1426,7 +1471,7 @@ footer{
 .btn-Tumbleweed{
     background: #D59F80;
     border-radius: 8px;
-    font-family: 'SF Pro Display',sans-serif;
+    font-family: var(--font-main);
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1528,14 +1573,13 @@ footer{
 // ================================
 @keyframes touchcard{
     0%{
-        // transform:translateX(10px) translateY(10px)  rotate(21deg) !important;        
-        transform:  translateY(30px) ;
+        transform: translateX(46px) translateY(35px)  rotateX(0) rotateY(0) rotateZ(15deg);
     }
     50%{
-        transform:  translateY(0px) ;
+        transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
     }
     100%{
-        transform:  translateY(0px);
+        transform: translateX(46px) translateY(-19px) rotateX(0) rotateY(0) rotateZ(15deg);
         // transform: translateX(0px) translateY(0px) rotate(0deg) translateZ(0px);
         // transform:translateX(0) translateY(0)  rotate(0) !important;
     }

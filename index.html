@@ -291,11 +291,21 @@
                 Những gì bạn có thể chia sẻ
             </p>
             <p class="decription">
-                "Một chạm để chia sẻ, một chạm để kết nối", Card visit điện tử ONTHECARD đang dần thay thế Card visit truyền thống vì những tính năng ưu việt mà nó mang lại.
+                <b>
+                    "Một chạm để chia sẻ, một chạm để kết nối"
+                </b>
+                , Card visit điện tử ONTHECARD đang 
+                <br>
+                dần thay thế Card visit truyền thống vì những tính năng ưu việt mà nó mang lại.
             </p>
             <div class="tapply-row">
                 <aside class="tapply-col-md-left">
                     <img src="img/home/section03-img.png" alt="" class="tapply-maxw-100"> 
+                    <p class="tapply-text-center">
+                        <b>
+                            và nhiều hơn thế nữa...
+                        </b>
+                    </p>
                 </aside>
                 <aside class="tapply-col-md-right">
                     <div class="features">
@@ -802,39 +812,41 @@
         <div class="tapply-container">
             <p class="titleSection">Những câu hỏi thường gặp</p>
             <div class="QA">
-                <div>
-                    <p class="question">1/ Dùng thẻ này có bị mất tài khoản Facebook, Instagram,Zalo,... không?</p>
+                <details>                    
+                    <summary class="question">1/ Dùng thẻ này có bị mất tài khoản Facebook, Instagram,Zalo,... không?</summary>
                     <p class="answer">Chắc chắn là KHÔNG rồi. Các trang mạng xã hội bạn chia sẻ là các đường dẫn liên kết tới các trang đó. Tapply không yêu cầu khách hàng...
                         <a href="#"> xem thêm</a>
                     </p>
-                </div> 
-                <div>
-                    <p class="question">
+                </details>
+                <details>                    
+                    <summary class="question">                        
                         2/ Tôi có thể thêm/bớt thông tin theo ý muốn?
-                    </p>
+                    </summary>
                     <p class="answer">
                         Được chứ, bạn có thể thêm vô vàn mạng xã hộị của bạn mà không bị giới hạn.
-                        <!-- <a href="#"> xem thêm</a> -->
                     </p>
-                </div> 
-                <div>
-                    <p class="question">
+                </details>
+
+                <details>                    
+                    <summary class="question">                       
                         3/ Khi bị đánh rơi thẻ, người khác có thể sửa thông tin của tôi không?
-                    </p>
+                    </summary>
                     <p class="answer">
                         - KHÔNG bạn nhé. Mỗi thẻ Tapply là một tài khoản riêng, được bảo mật bởi mật khẩu do chính các bạn sử dụng...
-                        <a href="#"> xem thêm</a>
                     </p>
-                </div> 
-                <div>
-                    <p class="question">
+                </details>
+
+                <details>                    
+                    <summary class="question">
+
                         4/ Tôi có thể làm lại thẻ khi bị mất không?
-                    </p>
+                    </summary>
                     <p class="answer">
+
                         Được bạn nhé. Nếu mất thẻ, hãy liên hệ ngay với đội ngũ hỗ trợ của Tapply, bạn sẽ được cấp lại thẻ mới mà không cần phải thay đổi lại thông tin.
                         <a href="#"> xem thêm</a>
                     </p>
-                </div> 
+                </details>
             </div>
         </div>
     </section>   
@@ -1105,7 +1117,7 @@
             direction: 'horizontal',            
             slidesPerView:'auto',
             spaceBetween: 20,
-            centeredSlides:true,
+            // centeredSlides:true,
             grabCursor: true,
             loop: true,
             // If we need pagination
@@ -1119,7 +1131,7 @@
             }, 
             breakpoints: {                
                 768: {
-                slidesPerView: 3
+                slidesPerView: 4
                 }
             },
         });
