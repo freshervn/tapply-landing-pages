@@ -820,6 +820,12 @@
   width: 15em;
 }
 
+@media (max-width: 768px) {
+  .tapply-card-details .right input[name='tapply-name'] {
+    width: 100%;
+  }
+}
+
 .tapply-card-details .right .container-checkbox {
   margin-right: 1em;
   display: inline-block;
