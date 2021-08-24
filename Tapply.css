@@ -1658,6 +1658,12 @@ header .content .tips img:last-of-type {
   margin-right: 5vw;
 }
 
+@media (max-width: 768px) {
+  .tapply-tutorial aside:first-child {
+    text-align: center;
+  }
+}
+
 .tapply-tutorial aside:first-child svg {
   overflow: visible;
   max-width: 100%;
@@ -1666,7 +1672,7 @@ header .content .tips img:last-of-type {
 
 @media (max-width: 768px) {
   .tapply-tutorial aside:first-child svg {
-    width: 272px;
+    width: 72.5%;
   }
 }
 
@@ -1690,6 +1696,12 @@ header .content .tips img:last-of-type {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .tapply-tutorial aside:last-child {
+    padding: 0 15px;
+  }
 }
 
 .tapply-tutorial aside .features {
@@ -1723,6 +1735,13 @@ header .content .tips img:last-of-type {
 .tapply-tutorial aside span img {
   width: 70%;
   height: 70%;
+}
+
+@media (max-width: 768px) {
+  .tapply-tutorial aside span {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .tapply-tutorial aside .title {
@@ -1762,6 +1781,7 @@ header .content .tips img:last-of-type {
 @media (max-width: 768px) {
   .tapply-tutorial aside .content {
     font-size: 12px;
+    color: #0D0C22;
   }
 }
 
