@@ -2348,6 +2348,16 @@ header .content .tips img:last-of-type {
 }
 
 .card figure figcaption .card-name {
+  height: 3.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: var(--font-main);
   font-style: normal;
   font-weight: bold;
