@@ -1733,7 +1733,7 @@ header .content .tips img:last-of-type {
 
 @media (max-width: 768px) {
   .tapply-tutorial aside .title {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 6px;
     margin-bottom: 6px;
   }
@@ -1755,7 +1755,7 @@ header .content .tips img:last-of-type {
 
 @media (max-width: 768px) {
   .tapply-tutorial aside .content {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
