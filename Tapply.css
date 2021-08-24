@@ -1314,7 +1314,7 @@ header .content {
 
 @media (max-width: 768px) {
   header .content {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 150px);
     padding-top: 3vh;
     padding-top: 2vh;
   }
@@ -1662,6 +1662,12 @@ header .content .tips img:last-of-type {
   overflow: visible;
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .tapply-tutorial aside:first-child svg {
+    width: 272px;
+  }
 }
 
 .tapply-tutorial aside:first-child svg > g > rect:nth-child(2) {

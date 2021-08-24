@@ -302,7 +302,7 @@ header .content{
         margin-top:12vw;
     }
     @media (max-width:768px) {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 150px);
         padding-top: 3vh;
         padding-top: 2vh;
     }
@@ -580,6 +580,9 @@ header .content{
                 overflow: visible;
                 max-width: 100%;
                 height: auto;
+                @media (max-width:768px) {
+                    width: 272px;
+                }
             }
             svg > g > rect:nth-child(2){
                 animation: bright 2s ease-in-out alternate-reverse infinite;
